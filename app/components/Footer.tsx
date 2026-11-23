@@ -1,3 +1,5 @@
+const currentYear = new Date().getFullYear();
+
 const links = [
   { label: "分析面向", href: "#categories" },
   { label: "指標總覽", href: "#stats" },
@@ -51,7 +53,7 @@ export default function Footer() {
 
       <div className="border-t border-white/[0.06] px-6 py-6">
         <p className="mx-auto max-w-6xl font-mono text-xs text-slate-600">
-          © {new Date().getFullYear()} 基本面選股指南
+          © {currentYear} 基本面選股指南
         </p>
       </div>
     </footer>
