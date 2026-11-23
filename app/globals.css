@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05080d;
+  --foreground: #e4ecf4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-noto-sans-tc);
+  --font-serif: var(--font-noto-serif-tc);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(148, 189, 221, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 189, 221, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
